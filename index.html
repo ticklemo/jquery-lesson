@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>hellow worll </title>
+  <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <!-- call the CDN BEFORE FLEXSLIDER -->
+  <script src="js/jquery.flexslider.js"></script>
+<!-- call flexslider before custom js so custom js can override and have priority -->
+  <script type="text/javascript" src="js/script.js"></script>
+
+  <script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      animation: "fade",
+      slideshow: true,
+      touch: true,
+    });
+  });
+</script>
+
+</head>
+<body>
+
+  <h1 id="theBackground">a thing that is happening</h1>
+
+  <button id="testButton">jquery is working?</button>
+
+  <div class="flexslider">
+    <ul class="slides">
+      <li>
+        <div class="header-container">
+          <h2>im literally a cat</h2>
+          <h3>this is literally a photo of a cat</h3>
+        </div>
+        <img src="img/cat1.jpg" />
+      </li>
+      <li>
+        <img src="img/cat2.jpg" />
+      </li>
+      <li>
+        <img src="img/cat3.jpg" />
+      </li>
+    </ul>
+  </div>
+
+
+</body>
+</html>
